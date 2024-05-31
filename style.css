@@ -44,10 +44,37 @@ body{
 }
 
 footer{
-    background-color: rgb(20, 161, 232);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(12, 25, 78);
+    margin-bottom: 0;
 }
 
 .footer-container{
     width: 100%;
     padding: 15px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.socialmedia-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia-icon a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialmedia-icon a i{
+    font-size: 2em;
 }
