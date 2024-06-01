@@ -1,6 +1,8 @@
 body{
     margin: 0;
+    padding: 0;
     background-color: white;
+    width: 100%;
 }
 
 .nav-text{
@@ -13,7 +15,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: rgb(107, 215, 234);
     height: 80px;
 }
 
@@ -52,7 +54,6 @@ footer{
 }
 
 .footer-container{
-    width: 100%;
     padding: 15px;
 }
 
@@ -90,14 +91,13 @@ footer{
 
 .image-container{
     position: relative;
-    display: block;
     padding-left: 25px;
     padding-right: 25px;
 }
 
 .image-container img{
     display: block;
-    width: 100%;
+    width: 90%;
     height: 800px;
 }
 
@@ -112,4 +112,16 @@ footer{
     border-radius: 5px;
     text-align: center;
     font-size: 30px;
+}
+
+.t{
+    background-color: red;
+    display: inline-block;
+    
+}
+
+.k{
+    background-color: rgb(59, 59, 237);
+    display: inline-block;
+
 }
