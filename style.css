@@ -190,10 +190,15 @@ footer{
 .overlay-request{
     position: absolute;
     top: 92%;
-    left: 80%;
+    left: 78%;
     font-size: 20px;
     border-radius: 15px;
     width: 210px;
+}
+
+.overlay-request a{
+    text-decoration: none;
+    color: black;
 }
 
 .overlay-request:hover{
