@@ -156,7 +156,7 @@ footer{
     border-radius: 5px;
     text-align: center;
     top: 30%;
-    left: 60%;
+    left: 55%;
     width: 700px;
     color: black;
     font-weight: 900;
@@ -168,11 +168,10 @@ footer{
     position: absolute  ;
     text-align: center;
     top:50%;
-    left: 53%;
+    left: 50%;
     font-size: 45px;
     width: 150px;
     background-color: rgba(156,66,236,255);
-    
     border: 1px solid white;
     border-radius: 10px;
 }
@@ -202,21 +201,102 @@ footer{
     transition: 0.2s ease-in-out;
 }
 
+.form-header{
+    text-align: center;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+input, select, textarea, .sbutton {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.sbutton {
+    margin-top: 1em;
+    padding: 1em;
+    font-size: 1.1em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sbutton:hover {
+    background-color: #45a049;
+}
+
 @media (max-width:1000px){
-    .grid-container{
-        grid-template-columns: repeat(4,auto);
-        
+    .image-container img{
+        width: 100%;
+        height: 700px;
     }
+    .overlay-buy{
+        top:55%;
+        left: 49%;
+    }
+    .overlay-request{
+        top: 92%;
+        left: 70%;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(4,auto);  
+    }
+
 }
 
 @media (max-width:800px){
+    .image-container img{
+        width: 100%;
+        height: 600px;
+    }
+    .overlay-text {
+        transform: translate(-60%, -50%);
+        font-size: 30px;
+    }
+    .overlay-buy{
+        top:55%;
+        left: 49%;
+    }
+    .overlay-request{
+        display: none;
+    }
     .grid-container{
-        grid-template-columns: repeat(3,auto);
-        
+        grid-template-columns: repeat(3,auto);  
     }
 }
 
 @media (max-width:500px){
+    .overlay-text{
+        display: none;
+    }
     .grid-container{
         grid-template-columns: repeat(2,auto);
         
