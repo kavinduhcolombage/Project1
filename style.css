@@ -46,6 +46,38 @@ body{
     transition: 0.6s;
 }
 
+.grid-header{
+    padding: 5px;
+    margin-right: 50px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 1em;
+    padding: 1em;
+}
+
+.grid-item{
+    background-color:white;
+    padding: 1em;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.grid-item img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-item p{
+    margin-top: 0.4em;
+    font-size: 20px;
+}
+
+
 footer{
     position: relative;
     bottom: 0;
